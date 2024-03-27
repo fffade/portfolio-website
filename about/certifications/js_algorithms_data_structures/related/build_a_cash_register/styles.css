@@ -1,0 +1,51 @@
+
+main {
+  width: 50%;
+  margin: 10% auto 0 auto;
+  text-align: center;
+}
+
+html, body {
+  background-color: #eeffee;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 1.6rem;
+  font-family: Verdana, sans-serif;
+}
+
+label, input, button, span {
+  font-size: 1rem;
+  font-family: monospace;
+}
+
+#change-due {
+  margin: 1rem auto 1rem auto;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.1rem;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+#change-due * {
+  margin-bottom: 0.25rem;
+}
+
+.cash {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.cash * {
+  margin-bottom: 0.5rem;
+}
+
+button {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}

@@ -1,0 +1,51 @@
+#container
+{
+  display: grid;
+  text-align: center;
+  margin-top: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#bg-color-container
+{
+  background-color: #303036;
+  min-width: 30%;
+  margin: auto;
+  border-radius: 10px;
+}
+
+h1
+{
+  color: #dddddd;
+  font-family: Helvetica, arial, sans-serif;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+#color-code
+{
+  font-weight: bold;
+  color: #a0d0f0;
+}
+
+#change-color
+{
+  width: 8%;
+  margin: 20px auto auto auto;
+  font-size: 1em;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+#change-color:hover
+{
+  background-color: #f0f0f0;
+}
+
+#change-color:active
+{
+  background-color: #c0c0c0;
+}

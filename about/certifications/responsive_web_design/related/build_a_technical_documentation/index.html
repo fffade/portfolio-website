@@ -1,0 +1,137 @@
+<!-- Omar Johnson -->
+<!-- Part of the Responsive Web Design Certification -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Coding with HTML | Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+
+    <nav id="navbar">
+      <header>
+        <h1>Coding with HTML</h1>
+      </header>
+      <ul class="links">
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#Basic_Structure">Basic Structure</a></li>
+        <li><a class="nav-link" href="#Headings">Headings</a></li>
+        <li><a class="nav-link" href="#Paragraphs">Paragraphs</a></li>
+        <li><a class="nav-link" href="#Images">Images</a></li>
+      </ul>
+    </nav>
+
+    <main id="main-doc">
+
+      <section id="Introduction" class="main-section">
+        <header>
+          <h2>Introduction</h2>
+        </header>
+
+        <p>Welcome to the technical documentation page for HTML programming.</p>
+
+        <p>HTML stands for HyperText Markup Language and is a computer language used to write code for internet websites. HTML is almost always used alongside Cascading Style Sheets, also known as CSS, which defines the visual appearance of a website.</p>
+        
+      </section>
+      
+      <section id="Basic_Structure" class="main-section">
+        <header>
+          <h2>Basic Structure</h2>
+        </header>
+
+        <p>HTML is similar to other markup languages in that components are defined through the use of opening and closing tags formed with angle brackets. For example, the opening and closing tag for a <strong>div</strong> element would look like the following, respectively:</p>
+
+        <code>
+          &lt;div&gt;
+        </code>
+
+        <code>
+          &lt;/div&gt;
+        </code>
+
+        <p>Every HTML file should begin with the following line of code. This line explicitly tells the browser that this file is HTML code.</p>
+
+        <p>These are the three primary elements that compose the HTML website structure:</p>
+
+        <ul>
+          <li>html</li>
+          <li>head</li>
+          <li>body</li>
+        </ul>
+
+        <p>The basic structure of an empty HTML page would look like this:</p>
+
+        <code>
+          <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+          </pre>
+        </code>
+
+      </section>
+
+      <section id="Headings" class="main-section">
+        <header>
+          <h2>Headings</h2>
+        </header>
+
+        <p>HTML contains multiple heading elements that can be used to display 'heading' text on a site. The largest heading type should only be used once to display the topic of the page. Subsequent headings can be used to lead different sections of the content.</p>
+
+        <p>The biggest heading in HTML is the <strong>h1</strong> element. Headings are then used in descending order by counting upwards: <strong>h2</strong>, <strong>h3</strong>, and so on.</p>
+
+        <p>This would create a large title text of "Hello World!":</p>
+
+        <code>
+          &lt;h1&gt;Hello World!&lt;/h1&gt;
+        </code>
+
+      </section>
+
+      <section id="Paragraphs" class="main-section">
+        <header>
+          <h2>Paragraphs</h2>
+        </header>
+
+        <p>Paragraph elements can be used to display the general textual content of a website. This kind of text is usually the smallest of font sizes on a page. Below is an example of a short paragraph.</p>
+
+        <code>
+          &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ligula ex, commodo nec auctor id, tincidunt a lorem. Maecenas lacinia lorem in elit efficitur, nec rutrum libero cursus. Proin felis magna, condimentum non velit et, ullamcorper egestas risus. Proin justo turpis, tempor elementum sem eget, ultrices imperdiet justo. Nam gravida rhoncus pretium. Cras molestie, nulla non congue finibus, elit lectus sagittis nunc, sit amet convallis ipsum augue vel lacus. Nam scelerisque rutrum metus eget feugiat. Mauris dictum a enim porttitor aliquam. Aenean tincidunt libero ut mollis posuere. Proin condimentum facilisis erat, eget scelerisque dolor lacinia non. Donec tortor nibh, rutrum sit amet dolor id, porttitor cursus est. Cras in finibus nisl.&lt;/p&gt;
+          </code>
+
+          <p>The style of text can be altered by wrapping text in certain elements. For example, text can be boldened, italicized, crossed through, and more. Here are some elements that can be used to decorate text:</p>
+
+          <ul>
+            <li>strong (boldens)</li>
+            <li>em (emphasizes)</li>
+            <li>s (strike through)</li>
+            <li>ins (underline)</li>
+          </ul>
+      </section>
+
+      <section id="Images" class="main-section">
+        <header>
+          <h2>Images</h2>
+        </header>
+
+        <p>The last topic that is covered in this documentation is images. Images can be inserted into pages to display image files such as .png, .jpg, or .webp. To do so, create an <strong>img</strong> element. Unlike most other elements, images do <em>not</em> use closing tags. A src attribute should be set with the image path or image URL using the format "attribute=value".</p>
+
+        <code>
+          &lt;img src="./dog.png"&gt;
+        </code>
+
+        <p>This may look like the following.</p>
+
+        <img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*" alt="puppy"/>
+      </section>
+
+    </main>
+
+  </body>
+</html>

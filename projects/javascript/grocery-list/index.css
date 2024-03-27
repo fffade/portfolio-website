@@ -1,0 +1,101 @@
+
+html, body
+{
+  background-color: #e0e0e0;
+}
+
+#container
+{
+  text-align: center;
+  margin: 10% 30% 10% 30%;
+  font-size: 1em;
+  background-color: #fafafa;
+  padding: 30px;
+  width: 40%;
+  box-sizing: border-box;
+}
+
+h1
+{
+  font-family: Helvetica, Arial, sans-serif;
+  letter-spacing: 2px;
+  padding: 5px;
+  font-weight: bolder;
+}
+
+#add-item
+{
+  margin: 15px 5% 15px 5%;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-template-rows: auto;
+  max-width: 90%;
+}
+
+button, input {
+  font-size: 0.95em;
+  padding: 5px;
+  font-family: "Trebuchet MS", sans-serif;
+  letter-spacing: 1px;
+  border: 1px solid #6680a0;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #d0e0f3;
+}
+
+button:hover {
+  background-color: #c0c0e3;
+}
+
+button:active {
+  background-color: #9090a3;
+}
+
+#item-name
+{
+  width: auto;
+  height: 1.5em;
+}
+
+#add
+{
+  width: 90%;
+  margin-left: auto;
+  height: auto;
+}
+
+#items-container
+{
+  margin: 30px;
+  padding: 10px;
+}
+
+p
+{
+  font-family: Helvetica, Arial, sans-serif;
+  letter-spacing: 2px;
+  color: #35658e;
+  margin: 20px;
+  font-size: 1.1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+a
+{
+  font-size: 0.9em;
+  margin-top: auto;
+  color: #d02020;
+}
+
+a:active
+{
+  color: #302020 !important;
+}
+
+a:visited
+{
+  color: #d02020 !important;
+}

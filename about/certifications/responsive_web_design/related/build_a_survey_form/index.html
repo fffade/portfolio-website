@@ -1,0 +1,97 @@
+<!-- Omar Johnson -->
+<!-- Part of the Responsive Web Design Certification -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Customer Review Survey</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <h1 id="title">Customer Review Survey</h1>
+
+    <p id="description">
+      Tell us how you feel about the product you bought from us!
+    </p>
+
+    <form id="survey-form" action="./">
+
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label id="name-label" for="name">
+          Enter your name: 
+          <input id="name" type="text" placeholder="John Doe" required />
+        </label>
+        <label id="email-label" for="email">
+          Enter your email:
+          <input id="email" type="email" placeholder="jdoe@example.com" required />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Review</legend>
+
+        <label id="number-label" for="number">
+          How many stars would you rate the product?
+          <input id="number" type="number" placeholder="1 to 5" min="1" max="5" required />
+        </label>
+        
+        <label for="experience">
+          How was your overall experience with the product?
+          <div id="experience">
+            <label for="satisfied-exp">
+              <input id="satisfied-exp" class="inline" type="radio" name="experience" value="satisfied" checked/> Satisfied
+            </label>
+            <label for="neutral-exp">
+              <input id="neutral-exp" type="radio" class="inline" name="experience" value="neutral"/> OK
+            </label>
+            <label for="dissatisfied-exp">
+              <input id="dissatisfied-exp" type="radio" class="inline" name="experience" value="dissatisfied"/> Dissatisfied
+            </label>
+          </div>
+        </label>
+        
+        <label for="features">
+          Select the features of the product that you are pleased with:
+          <div id="features">
+            <label for="functionality">
+              <input id="functionality" type="checkbox" class="inline" value="functionality" /> Functionality</input>
+            </label>
+            <label for="ease-of-use">
+              <input id="ease-of-use" type="checkbox" class="inline" value="ease-of-use"/> Ease of Use</input>
+            </label>
+            <label for="appearance">
+              <input id="appearance" type="checkbox" class="inline" value="appearance"/> Appearance</input>
+            </label>
+            <label for="sturdiness">
+              <input id="sturdiness" type="checkbox" class="inline" value="sturdiness"/> Sturdiness</input>
+            </label>
+          </div>
+        </label>
+
+        <label for="comments">
+          State any feedback or concerns you have:
+          <textarea id="comments" name="comments" rows="4" cols="50" placeholder="I love the keyboard's sleek design!"></textarea>
+        </label>
+      
+      </fieldset>
+
+      <fieldset>
+        <legend>Where did you hear about us?</legend>
+        <select id="dropdown" name="discovery" required>
+          <option value="">(select one)</option>
+          <option value="1">Search Engine</option>
+          <option value="2">Instagram</option>
+          <option value="3">Twitter</option>
+          <option value="4">Friend or Family</option>
+          <option value="5">Site Advertisement</option>
+          <option value="6">Other</option>
+        </select>
+      </fieldset>
+
+      <input type="submit" id="submit" value="Submit"/>
+
+    </form>
+  </body>
+</html>

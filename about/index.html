@@ -1,0 +1,146 @@
+<!--
+  Omar Johnson
+  portfolio about/index.html
+  2/7/24
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  <title>About Omar Johnson</title>
+
+  <!-- Styling -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <!-- Import React-->
+  <script type="application/javascript" src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script> 
+  <script type="application/javascript" src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <script type="application/javascript" src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+
+</head>
+<body>
+
+  <header id="react-header"></header>
+
+  <main>
+
+    <article>
+
+      <figure class="full-width no-caption">
+        <img src="/images/kaitlyn_baker_typing.jpg" alt="Portrait of Omar Johnson">
+        <h2>I am a</h2>
+        <h1>computer scientist</h1>
+      </figure>
+
+    </article>
+
+
+    <article>
+      <h2>Important Links</h2>
+
+      <ul>
+        <li><a href="/projects/">See my projects</a></li>
+        <li><a href="./certifications/">See my certifications</a></li>
+      </ul>
+    </article>
+
+    <article>
+
+      <h2>Ever since I was little...</h2>
+
+      <p>
+        I have been obsessed with computers and programming. My 10-year birthday gift was a new laptop. Initially, I only played online flash games
+        and spent most of my time browsing the internet. Video games <em>inspired</em> me. I adored many games from simple flash games like <i>Age of War</i> to open-world,
+        creative ones like <i>Minecraft</i>. Eventually, I grew frustrated with their limits. I wanted to conform video games and play them exactly how I wanted to. I wanted new items,
+        new characters, new features -- but I knew all my wishes were in vain.
+      </p>
+      <p>
+        That's when I learnt about programming languages: the very tool that was used to make all these games. Despite my young age, I was fascinated by their power.
+        Python was the beginning of my journey, a simple and beginner-friendly language. I began with text adventure projects, simple text-based games with no graphics. I made
+        other kinds of projects as well, the kind you would learn in school, except I was teaching myself through the internet.
+      </p>
+      <p>
+        As I grew older, I delved into more advanced languages like C++ and Java. The immense strength and capabilities of C++ astonished me, and it is still one of my favourite
+        programming languages. Java, being the language used to make Minecraft, was also amazing to me. I studied a vast range of topics like website building, databases, machine learning, and more.
+        The bounds of computer science seemed endless.
+      </p>
+
+    </article>
+
+    <article class="gallery">
+
+      <figure class="zoom-enabled">
+        <img src="/images/building_computer.jpg" alt="Omar Johnson's Personal Computer">
+        <figcaption>I built my own personal computer</figcaption>
+      </figure>
+
+      <figure class="zoom-enabled">
+        <img src="/images/programming_website.png" alt="Omar Johnson's Website Programming"/>
+        <figcaption>I programmed this website</figcaption>
+      </figure>
+
+      <figure class="zoom-enabled">
+        <img src="/images/classes.png" alt="Omar Johnson's Online Classes"/>
+        <figcaption>I'm taking software development classes</figcaption>
+      </figure>
+
+    </article>
+
+    <article>
+
+      <h2>What now?</h2>
+
+      <p>
+        I am still a young adult, but I have come a long way. As of right now, I am pursuing a B.S. in Software Development at Bellevue University. This journey
+        is a long and fruitful one with many finished projects to show for.
+        Even with a part-time job to support me, I am still driven toward something bigger: personal independence and success. Right now, I am working hard to achieve that vision,
+        expanding my knowledge of computer science.
+      </p>
+
+      <p>
+        This website is just a single one of my creations I am proud of.
+      </p>
+
+
+
+    </article>
+
+
+    <article class="full-size-display">
+      <!-- This link slowly reveals the languages -->
+      <h1>I know various <a id="programming-languages" href="javascript:void(0);">programming languages</a></h1>
+
+      <div style="top: 12%; left: 6%;" class="floating-card">
+        <h3>Java</h3>
+      </div>
+      <div style="bottom: 10%; right: 20%;" class="floating-card">
+        <h3>C#</h3>
+      </div>
+      <div style="top: 8%; left: 45%;" class="floating-card">
+        <h3>Python</h3>
+      </div>
+      <div style="top: 13%; right: 6%;" class="floating-card">
+        <h3>C++</h3>
+      </div>
+      <div style="bottom: 10%; left: 20%;" class="floating-card">
+        <h3>Javascript</h3>
+      </div>
+
+      <script type="text/javascript" src="programming_languages.js" defer></script>
+
+    </article>
+
+  </main>
+
+  <footer id="react-footer"></footer>
+
+
+  <!-- Import components -->
+  <script type="text/babel" src="/components/header.js"></script>
+  <script type="text/babel" src="/components/footer.js"></script>
+
+</body>
+</html>

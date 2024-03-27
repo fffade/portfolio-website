@@ -1,0 +1,78 @@
+
+
+html, body {
+  background-color: #eee;
+  font-size: 22px;
+}
+
+main {
+  width: 50vw;
+  margin: 20vh auto;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Georgia", serif;
+  font-size: 1.6rem;
+}
+
+form {
+  color: #fff;
+  background-color: #303030;
+  padding: 1rem;
+  border-radius: 20px;
+  font-family: Arial, sans-serif;
+}
+
+form * {
+  display: block;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+form label {
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+}
+
+form input {
+  padding: 0.25rem;
+  font-size: 1rem;
+}
+
+form button {
+  font-size: 0.8rem;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.25rem;
+  border-radius: 3px;
+  border: none;
+  background-color: #fff;
+}
+
+form button:hover {
+  background-color: #efefef;
+}
+
+form button:active {
+  background-color: #ccc;
+}
+
+form div {
+  margin-top: 2rem;
+  padding: 0;
+  font-size: 0.8rem;
+}
+
+form div * {
+  display: inline;
+}
+
+form div span {
+  
+}
+
+.tip {
+  border-top: 12px double #303030;
+}

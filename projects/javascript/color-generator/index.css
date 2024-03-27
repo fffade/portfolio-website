@@ -1,0 +1,98 @@
+
+html, body
+{
+  background-color: #ffffff;
+}
+
+#container
+{
+  text-align: center;
+  margin-top: 10%;
+  margin-left: 25%;
+  font-size: 1em;
+  width: 50%;
+}
+
+h1
+{
+  font-family: Helvetica, Arial, sans-serif;
+  letter-spacing: 2px;
+  padding: 10px;
+  margin: 50px;
+  font-weight: bolder;
+}
+
+#choose-color
+{
+  display: flex;
+  width: 20%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+#choose-color input, #choose-color button
+{
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 1em;
+  border: none;
+  border-radius: 3px;
+}
+
+#choose-color input
+{
+  width: 60%;
+  padding: 7px;
+  background-color: #f8f8f8;
+}
+
+#choose-color button
+{
+  width: 35%;
+  padding: 3px;
+  background-color: #c6c6ff;
+  transition: width 0.6s ease-out;
+}
+
+#choose-color button:hover
+{
+  width: 45%;
+  background-color: #c0c0f0;
+  transition: width 0.5s ease;
+}
+
+#choose-color button:active
+{
+  background-color: #9090c0;
+}
+
+p
+{
+  font-family: "Trebuchet MS", sans-serif;
+  letter-spacing: 1px;
+  color: #302000;
+  margin: 10px;
+  font-size: 1em;
+}
+
+#output
+{
+  margin: 30px;
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  grid-template-rows: 200px;
+  justify-content: space-around;
+}
+
+#output p
+{
+  background-color: #000000;
+  color: white;
+  padding: 2px;
+}
+
+.color-container
+{
+  background-color: #101010;
+  padding: 10px;
+  box-shadow: -5px -5px 6px 2px #eaeaea;
+}

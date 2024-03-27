@@ -1,0 +1,58 @@
+
+html, body
+{
+  background-color: #104010;
+  font-size: 24px;
+}
+
+main
+{
+  margin: 2rem auto 0 auto;
+  width: 40vw;
+  text-align: center;
+  color: #fefefe;
+}
+
+h1
+{
+  font-family: "Times New Roman", serif;
+}
+
+form
+{
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #fefefe;
+  padding: 1rem;
+  background-color: #208020;
+  border-radius: 3px;
+}
+
+form *
+{
+  margin-bottom: 0.5rem;
+  height: 1.5rem;
+  font-size: 1rem;
+  font-family: monospace;
+}
+
+#output
+{
+  background-color: #c0ffc0;
+  border: 3px solid #fefefe;
+  font-size: 1.4rem;
+  padding: 0.5rem;
+  color: black;
+}
+
+#output.hidden
+{
+  display: none;
+}
+
+#output.warning
+{
+  background-color: #ffa0a0;
+  font-weight: 800;
+  font-size: unset;
+}

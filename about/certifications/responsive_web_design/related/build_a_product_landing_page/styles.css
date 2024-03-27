@@ -1,0 +1,265 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #fefefe;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: min-content min-content 0.5fr 1fr;
+  grid-template-rows: 5rem;
+  column-gap: 1rem;
+  align-items: center;
+  box-shadow: 2px 0 1px 3px #f7f7f7;
+  background-color: inherit;
+}
+
+header .company-name {
+  font-size: 1.6rem;
+  text-wrap: nowrap;
+  font-family: Georgia, serif;
+  grid-column: 2 / 2;
+}
+
+header .logo {
+  height: 80%;
+  margin-left: 2rem;
+  grid-column: 1 / 1;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 5rem;
+}
+footer p {
+  font-size: 0.9rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  grid-column: 4 / -1;
+}
+
+nav .nav-link {
+  font-weight: 100;
+  text-decoration: none;
+  color: #303030;
+  font-family: Arial, sans-serif;
+  letter-spacing: 0.6px;
+  font-size: 1.1rem;
+}
+
+nav .nav-link:hover, nav .nav-link:active {
+  text-decoration: underline;
+}
+
+main {
+  display: block;
+  width: 50%;
+  margin: calc(5rem + 2rem) auto 0 auto;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+article {
+  padding: 1rem 0;
+}
+
+iframe {
+  width: 100%;
+  min-height: 20rem;
+  height: auto;
+  background-color: #000;
+  border: 0;
+}
+
+section h2 {
+  text-align: center;
+}
+
+.prices {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  column-gap: 1rem;
+}
+
+.price-container, .price-content {
+  display: flex;
+}
+
+.price-container {
+  border: 2px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.price-content {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-start;
+}
+
+.price-content span {
+  display: block;
+  width: 100%;
+}
+
+.price-content .model {
+  font-size: 1.1rem;
+  padding: 0.5rem 0;
+  background-color: #eee;
+}
+
+.price-content .price {
+  font-size: 1.4rem;
+  padding: 2rem 0;
+  font-weight: bold;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+.price-content .feature {
+  padding: 0.5rem 0;
+  letter-spacing: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  margin: 0 auto;
+  justify-content: flex-start;
+  align-items: center;
+  row-gap: 0.5rem;
+}
+
+form input, form select {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.5rem;
+  color: #333;
+  font-family: Arial, sans-serif;
+  border: 1px solid #555;
+  border-radius: 3px;
+}
+
+form option {
+  padding: 0.5rem;
+}
+
+form input[type="submit"] {
+  font-weight: 600;
+  padding: 0.8rem 0;
+  background-color: #dde;
+  border: 0;
+}
+
+form input[type="submit"]:hover {
+  background-color: #d0d0e0;
+}
+
+form input[type="submit"]:active {
+  background-color: #bbc;
+}
+
+h2, h3 {
+  font-family: "Trebuchet MS", sans-serif;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 3rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+p {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.6px;
+  margin-bottom: 3rem;
+  font-weight: 200;
+}
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 820px) {
+
+  header {
+    grid-template-rows: 4rem !important;
+  }
+
+  header .company-name {
+    font-size: 1.3rem !important;
+  }
+
+  nav .nav-link {
+    font-size: 1rem !important;
+  }
+
+  .prices {
+    display: flex !important;
+    flex-direction: column;
+    row-gap: 3rem;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+
+  header {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header .company-name {
+    font-size: 1.6rem !important;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #333;
+  }
+
+  header .logo {
+    height: 10dvh !important;
+    margin: 1rem auto;
+  }
+
+  nav {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 4rem;
+  }
+
+  nav .nav-link {
+    margin: auto;
+    font-size: 1.2rem !important;
+  }
+
+  main {
+    margin-top: calc(30dvh);
+    width: 70% !important;
+  }
+}
