@@ -65,7 +65,7 @@ header * {
 main
 {
   padding: 0.5rem;
-  margin: 6rem auto 4rem auto;
+  margin: 8rem auto 4rem auto;
   max-width: 50%;
   min-height: 50vh;
   overflow: hidden;
@@ -110,7 +110,7 @@ dialog::backdrop
 /* Article styles */
 article
 {
-  padding: 0.5rem;
+  padding: 1rem;
   margin: 1rem auto;
   max-width: 90%;
 }
@@ -201,7 +201,7 @@ div.details
   font-family: "Source Sans 3", Helvetica, sans-serif;
   font-size: 1rem;
   color: rgba(var(--font-color));
-  margin: 1rem 0 2rem 0;
+  margin: 1rem 0 4rem 0;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid rgba(var(--font-color), 0.3);
 }
@@ -386,7 +386,6 @@ img.logo
   height: 50px;
   border-radius: 5%;
   margin: auto;
-  cursor: pointer;
 }
 
 img.banner
@@ -397,7 +396,6 @@ img.banner
   opacity: 0.9;
   margin: -0.5rem;
   object-fit: cover;
-  object-position: 0 50%;
 }
 
 /* Lists */
@@ -561,7 +559,7 @@ a:active
 button
 {
   display: block;
-  margin: 3rem auto;
+  margin: auto;
   padding: 0.5rem 1rem;
   color: rgba(var(--font-color), 0.9);
   font-size: 1.1rem;
