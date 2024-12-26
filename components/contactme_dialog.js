@@ -1,12 +1,24 @@
 'use strict';
 const element = React.createElement;
 
-/* TODO: Make a Contact Me BUTTON component and add to header component */
 
 /* Contact me Dialog component */
 class ContactMeDialog extends React.Component
 {
 	// Default constructor
+	constructor(props) {
+		super(props);
+
+		document.querySelector("#contact-dialog").style.display = "none";
+		document.querySelector("#overlay").style.display = "none";
+	}
+
+	// Triggered when close button is pressed
+	handleClose()
+	{
+		document.querySelector("#contact-dialog").style.display = "none";
+		document.querySelector("#overlay").style.display = "none";
+	}
 
 	// Override render method
 	render()
@@ -17,7 +29,7 @@ class ContactMeDialog extends React.Component
 
 			    <p>
 			      Have a question or concern? Need my help with something? Just want to chat?<br/>
-			      I'm open to all communications! Just drop your email address below and tell me what's up.<br/>
+			      I'm open to all communications! Just drop your email address below with any relevant information.<br/>
 			      I'll send a response to your email as soon as possible.
 			    </p>
 
@@ -31,7 +43,7 @@ class ContactMeDialog extends React.Component
 
 			    </form>
 
-			    <a  href="#" className="dialog-close">X</a>
+			    <a  href="#" className="dialog-close" onClick={this.handleClose}>X</a>
 			 </React.Fragment>
   		);
 
@@ -39,7 +51,6 @@ class ContactMeDialog extends React.Component
 	}
 }
 
-// Replace DOM 'dialog element' with React Dialog component
-const domContainer = document.querySelector("#contact-me-dialog");
+const domContainer = document.querySelector("#contact-dialog");
 
 ReactDOM.render(element(ContactMeDialog), domContainer);

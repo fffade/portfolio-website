@@ -15,8 +15,6 @@ class Footer extends React.Component
 		return (
 			<React.Fragment>
 				<div>
-			      <a href="https://www.instagram.com/the_real_omar.j/" target="_blank" title="Opens in a new tab"><img src="/socials/instagram_icon.png" alt="Instagram"/></a>
-			      <a href="https://www.twitter.com/fffadedev" target="_blank" title="Opens in a new tab"><img src="/socials/twitter_icon.png" alt="Twitter"/></a>
 			      <a href="https://www.linkedin.com/in/omarjohnson2004" target="_blank" title="Opens in a new tab"><img src="/socials/linkedin_icon.png" alt="LinkedIn"/></a>
 			    </div>
 

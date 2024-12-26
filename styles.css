@@ -48,7 +48,7 @@ header
   width: 100%;
   height: 4rem;
   display: grid;
-  grid-template-columns: 10% 20% 10%;
+  grid-template-columns: 10% 50% 10%;
   grid-template-rows: 100%;
   justify-content: space-between;
   background-color: #1F1E1F;
@@ -205,10 +205,34 @@ div.details
   padding-bottom: 0.5rem;
   border-bottom: 2px solid rgba(var(--font-color), 0.3);
 }
- 
+
 div.details .details--author-name
 {
   font-weight: 600;
+}
+
+div#contact-dialog
+{
+  height: 50%;
+  width: 60%;
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  z-index: 3;
+  background-color: #303030;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+div#overlay
+{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: #01010160;
 }
 
 /* Forms, inputs, and textareas */
@@ -252,11 +276,12 @@ input[type="button"]:active, input[type="submit"]:active {
 nav
 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 100%;
   text-align: center;
 }
 
+/* Navbar link */
 a.nav
 {
   width: 100%;
@@ -285,7 +310,6 @@ a.nav:active
 }
 
 /* Images */
-
 figure
 {
   display: grid;
@@ -456,6 +480,14 @@ p
   letter-spacing: 0.5px;
 }
 
+.text-logo
+{
+  text-decoration: none;
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: rgb(var(--font-color));
+}
+
 /* QUOTES */
 blockquote
 {
@@ -493,7 +525,7 @@ blockquote::before
   font-family: Helvetica, "Trebuchet MS", serif;
 }
 
-blockquote .blockquote--author 
+blockquote .blockquote--author
 {
   display: flex;
   padding-top: 2rem;
@@ -618,7 +650,7 @@ footer
   padding: 2rem;
   min-height: 10rem;
   background-color: #090909; /* TODO: Make this a darker version of the secondary colour  (v)*/
-  box-shadow: 0 50vh 0 50vh #090909; /* stretches footer to bottom of page */ 
+  box-shadow: 0 50vh 0 50vh #090909; /* stretches footer to bottom of page */
 }
 
 p.footer

@@ -1,11 +1,17 @@
 'use strict';
 const element = React.createElement;
 
-
 /* Header component */
 class Header extends React.Component
 {
 	// Default constructor
+
+	// Triggered when the contact button is clicked
+	handleContactButton()
+	{
+		document.querySelector("#contact-dialog").style.display = "block";
+		document.querySelector("#overlay").style.display = "block";
+	}
 
 	// Override render method
 	render()
@@ -14,16 +20,18 @@ class Header extends React.Component
 		// <button type="button">Contact Me</button>
 		return (
 			<React.Fragment>
-				<img className="logo" src="/placeholder_logo.png" alt="Logo" onClick={ () => { window.location.href = "index.html"; } }/>
 
-			    <nav> 
+				<a className="text-logo" href="index.html">Omar Johnson</a>
+
+			    <nav>
 			      <div><p><a className="nav" href="/index.html">Home</a></p></div>
 			      <div><p><a className="nav" href="/about/">About</a></p></div>
 			      <div><p><a className="nav" href="/projects/">Projects</a></p></div>
+			      <div><p><a className="nav" href="/certifications/">Certifications</a></p></div>
 			    </nav>
 
-	    		
-	    	</React.Fragment>
+				<a href="#" onClick={this.handleContactButton}>Contact Me</a>
+	    </React.Fragment>
 		);
 	}
 }
